@@ -80,9 +80,6 @@ nav {
 
 }
 
-
-
-
 /*tablet*/
 
 
@@ -92,8 +89,14 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
+
+  h1 {
+    text-align: center;
+    padding-left: 80px;
+  }
+
   main{
     padding-left: 30px;
     padding-right: 30px;
@@ -115,11 +118,6 @@ nav {
     padding-right: 10px;
   }
 
-
-  h1{
-   text-align: center;
-
- }
 
  h2{
   text-align: center;
@@ -153,35 +151,52 @@ nav {
 
 }
 
+/*Other sizes*/
+
 @media (min-width: 1025px) {
 
   header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+    padding-left: 200px;
+
 
   }
   main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+  }
 
+  .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu {
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
-  }
+    flex-direction: row;  }
+
+.product{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
 
 .product > i {
            margin-top: 4px;
-           margin-left: 45%;
            padding-left: 10px;
            padding-right: 10px;
-           justify-content: space-around;
-
        }
 
   .hamburger{
@@ -189,15 +204,6 @@ nav {
   }
 
 
-  h1{
-   text-align: center;
-
- }
-
- h2{
-  text-align: center;
-
-}
 
  .social {
    background-color: white;
